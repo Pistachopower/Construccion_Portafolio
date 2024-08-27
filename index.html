@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--ENLACE RESPOSIVO
+    Fuente: https://cdnjs.com/libraries/font-awesome
+
+    Tutorial: https://www.youtube.com/watch?v=2s19KJq49rQ
+    1:20:25
+
+    Proyecto github: https://github.com/codigowebmp/portfolio-nick
+
+    
+    -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+    <title>Portafolio</title>
+</head>
+
+<body>
+    <!--Menu encabezado-->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Nelson Galicia</a>
+            </div>
+
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio">INICIO</a></li>
+                    <li><a href="#sobremi">SOBRE MI</a></li>
+                    <li><a href="#skills">SKILLS</a></li>
+                    <li><a href="#curriculum">CURRICULUM</a></li>
+                    <li><a href="#portafolio">PORTAFOLIO</a></li>
+                    <li><a href="#contacto">CONTACTO</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-responsive">
+                <!--
+                Menu hamburguesa
+                fuente: https://fontawesome.com/icons/bars?f=classic&s=solid
+                -->
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!--Seccion inicio-->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/fotoNelson.png" alt="Foto de perfil">
+            </div>
+
+            <h1>Nelson Galicia Carrero</h1>
+            <h2>Desarrollador de aplicaciones web - Periodista</h2>
+
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!--Seccion sobre mi-->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre mí</h2>
+            <p><span>Hola, soy Nelson Galicia Carrero.</span> Estudié Desarrollo de 
+                aplicaciones web en el Instituto Polígono Sur en Sevilla y soy 
+                periodista graduado en la universidad Católica Santa Rosa; 
+                además hice un máster en Comunicación y Cultura en la universidad
+                 de Sevilla.</p>
+
+            <div class="fila">
+                <!--datos personales-->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>E-mail</strong>
+                            nelsongalicia1@gmail.com
+                        </li>
+
+                        <li> 
+                            <strong>Dirección</strong>
+                            España  
+                        </li>
+
+                        <li>
+                            <strong>Ocupación</strong>
+                            <span>Estudiante</span>
+                        </li>
+                        
+                    </ul>
+                </div>
+
+                <!--intereses-->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>Leer</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-bicycle"></i>
+                            <span>Actividad en bicicleta</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>Senderismo</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-music"></i>
+                            <span>Música</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-linux"></i>
+                            <span>Linux</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>Fotografía</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-pen"></i>
+                            <span>Escribir</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>Jugar</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--
+                        <button>
+                Descarga CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+            -->
+
+        </div>
+    </section>
+
+    <!--Seccion skill-->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso javascript">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 
+                    <div class="skill">
+                        <span>Photoshop</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    -->
+
+                    <div class="skill">
+                        <span>Wordpress</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>61%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Drupal</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proyect Management</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>94%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Desarrollo de aplicaciones web (DAW)</h4>
+                        <span class="casa">IES Polígono sur</span>
+                        <span class="fecha">2023 - 2024</span>
+                        <p>Durante mi formación en desarrollo de aplicaciones web, he aprendido a usar JavaScript, HTML y CSS para el frontend, y SQL/PL-SQL, Java y Python para el backend. También manejo Git y GitHub para control de versiones y tengo conocimientos intermedios en Linux (Ubuntu).</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Máster Comunicación y cultura</h4>
+                        <span class="casa">Universidad de Sevilla, facultad de comunicación</span>
+                        <span class="fecha">2020 - 2021</span>
+                        <p>Durante el máster en Comunicación y Cultura, he adquirido conocimientos sólidos en metodologías de investigación y nociones epistemológicas en el campo de la comunicación. Asimismo he aprendido a analizar la influencia de los medios y tecnologías de la comunicación en la cultura contemporánea y a desarrollar proyectos de investigación de excelencia.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Licenciado en Comunicación Social</h4>
+                        <span class="casa">Universidad Cátólica Santa Rosa</span>
+                        <span class="fecha">2012 - 2017</span>
+                        <p>Durante mi Licenciatura en Comunicación Social en la Universidad Católica Santa Rosa, he adquirido habilidades para analizar y criticar fenómenos sociales y comunicacionales. He aprendido a producir y editar contenidos para diversos medios, como televisión, radio, prensa y redes sociales. Además, he desarrollado competencias en la planificación y gestión de proyectos comunicacionales en organizaciones y empresas</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha"> 
+                    <h3>Experiencia de trabajo</h3>
+
+                <!--
+                                        <div class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="casa">Nombre de Compañía</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                -->
+                    <div class="item der">
+                        <h4>Prácticas en desarrollo web</h4>
+                        <span class="casa">Motivado para adquirir nuevas habilidades en el área del desarrollo web</span>
+                        <!--
+                        se pone varios spannes para que se vea en la misma linea
+                        -->
+                        
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+
+                    <div class="item der">
+                        <h4>IC Revista científica de información y comunicación</h4>
+                        <span class="casa">Facultad de comunicación, Universidad de Sevilla</span>
+                        <span class="fecha">2017 - 2018</span>
+                        <p>He sido becario durante un año como Community Manager en una revista digital. En este tiempo, gestioné nuestras redes sociales, creando contenido atractivo que aumentó nuestra audiencia y el compromiso de los seguidores. Esta experiencia me permitió desarrollar habilidades en marketing digital y gestión de comunidades en línea.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Periódico Vargas es Noticia</h4>
+                        <span class="casa">Periodista</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>He trabajado durante un año como periodista en una revista digital, cubriendo las secciones de transporte e internacionales en política. En este tiempo, investigué y redacté artículos sobre las últimas novedades y tendencias en estos campos, lo que me permitió desarrollar mis habilidades de comunicación escrita.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      <!-- SECCION PORTFOLIO -->
+      <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTAFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/Motor Engine.png" alt="">
+                    <a href="https://pistachopower.github.io/Pagina_Web_Motores/" target="_blank">
+                        <div class="overlay">
+                            <h3>Página web</h3>
+                            <p>Versión para ordenador y móvil</p>
+                        </div>
+                    
+                    </a>
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+       <!-- SECCION CONTACTO
+               <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Nicaragua 159, San Rafael Mza
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamanos: 2384 - 4343443 
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: cw@example.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+       -->
+
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-skype"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-solid fa-rss"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
