@@ -10,6 +10,10 @@ https://fonts.google.com/selection/embed
   padding: 0%;
 }
 
+:root {
+  --accent: #f97316;
+}
+
 html {
   /*me permite deslizar cuando hago clic en los links del menu*/
   scroll-behavior: smooth;
@@ -38,7 +42,7 @@ html {
 .contenedor-header header .logo a {
   font-family: "Righteous";
   font-size: 36px;
-  color: #1cb698;
+  color: var(--accent);
   text-decoration: none;
 }
 
@@ -57,11 +61,11 @@ html {
 }
 
 .contenedor-header header nav ul li a:hover {
-  color: #1cb698;
+  color: var(--accent);
 }
 
 .nav-responsive {
-  background-color: #1cb698;
+  background-color: var(--accent);
   color: #fff;
   padding: 5px 10px;
   border-radius: 5px;
@@ -95,7 +99,7 @@ html {
 
 .inicio .contenido-banner img {
   margin-top: 40px;
-  border: 10px solid #1cb698;
+  border: 10px solid var(--accent);
   display: block;
   width: 80%;
   margin: auto;
@@ -128,7 +132,7 @@ html {
 }
 
 .inicio .contenido-banner .redes a:hover {
-  background-color: #1cb698;
+  background-color: var(--accent);
 }
 
 .sobremi {
@@ -152,7 +156,7 @@ html {
   margin-bottom: 20px;
 }
 .sobremi .contenido-seccion p span {
-  color: #1cb698;
+  color: var(--accent);
   font-weight: bold;
 }
 .sobremi .fila {
@@ -174,11 +178,11 @@ html {
 }
 .sobremi .fila .col ul li strong {
   display: inline-block;
-  color: #1cb698;
+  color: var(--accent);
   width: 130px;
 }
 .sobremi .fila .col ul li span {
-  background-color: #1cb698;
+  background-color: var(--accent);
   padding: 3px;
   font-weight: bold;
   border-radius: 5px;
@@ -200,7 +204,7 @@ html {
   transition: 0.3s;
 }
 .sobremi .fila .col .contenedor-intereses .interes:hover {
-  background-color: #1cb698;
+  background-color: var(--accent);
 }
 .sobremi .fila .col .contenedor-intereses .interes i {
   font-size: 30px;
@@ -225,7 +229,7 @@ html {
   left: 0;
   width: 0;
   height: 100%;
-  background-color: #1cb698;
+  background-color: var(--accent);
   z-index: -1;
   transition: 1s;
 }
@@ -277,7 +281,7 @@ html {
   margin-bottom: 30px;
 }
 .skills .skill .progreso{
-  background-color: #1CB698;
+  background-color: var(--accent);
   position: absolute;
   top: 0;
   left: 0;
@@ -287,7 +291,7 @@ html {
   position: absolute;
   height: 40px;
   width: 40px;
-  background-color: #1CB698;
+  background-color: var(--accent);
   border-radius: 50px;
   line-height: 40px;
   text-align: center;
@@ -297,96 +301,15 @@ html {
 }
 
 /* Estas clases se agregaran dinamicamente mediante javascript */
-.skills .skill .javascript{
-  width: 0%;
-  animation: 2s javascript forwards;
+.skills .skill .progreso {
+  width: 0;
 }
-@keyframes javascript {
-  0%{width: 0%;}
-  100%{width: 75%;}
+.skills .skill .progreso.animado {
+  animation: skill-progress 2s forwards;
 }
-
-.skills .skill .htmlcss{
-  width: 0%;
-  animation: 2s htmlcss forwards;
-}
-@keyframes htmlcss {
-  0%{width: 0%;}
-  100%{width: 89%;}
-}
-
-/* 
-.skills .skill .photoshop{
-  width: 0%;
-  animation: 2s photoshop forwards;
-}
-@keyframes photoshop {
-  0%{width: 0%;}
-  100%{width: 95%;}
-}
-
-*/
-.skills .skill .wordpress{
-  width: 0%;
-  animation: 2s wordpress forwards;
-}
-@keyframes wordpress {
-  0%{width: 0%;}
-  100%{width: 81%;}
-}
-
-.skills .skill .drupal{
-  width: 0%;
-  animation: 2s drupal forwards;
-}
-@keyframes drupal {
-  0%{width: 0%;}
-  100%{width: 55%;}
-}
-
-.skills .skill .comunicacion{
-  width: 0%;
-  animation: 2s comunicacion forwards;
-}
-@keyframes comunicacion {
-  0%{width: 0%;}
-  100%{width: 80%;}
-}
-
-.skills .skill .trabajo{
-  width: 0%;
-  animation: 2s trabajo forwards;
-}
-@keyframes trabajo {
-  0%{width: 0%;}
-  100%{width: 70%;}
-}
-
-.skills .skill .creatividad{
-  width: 0%;
-  animation: 2s creatividad forwards;
-}
-@keyframes creatividad {
-  0%{width: 0%;}
-  100%{width: 99%;}
-}
-
-.skills .skill .dedicacion{
-  width: 0%;
-  animation: 2s dedicacion forwards;
-}
-@keyframes dedicacion {
-  0%{width: 0%;}
-  100%{width: 65%;}
-}
-
-.skills .skill .proyect{
-  width: 0%;
-  animation: 2s proyect forwards;
-}
-@keyframes proyect {
-  0%{width: 0%;}
-  100%{width: 94%;}
+@keyframes skill-progress {
+  from { width: 0; }
+  to { width: var(--progress); }
 }
 
 /* SECCION CURRICULUM */
@@ -436,30 +359,30 @@ html {
   margin-bottom: 10px;
 }
 .curriculum .fila .item .casa{
-  color: #1CB698;
+  color: var(--accent);
   font-size: 22px;
   font-weight: bold;
   display: block;
 }
 .curriculum .fila .item .fecha{
   display: block;
-  color: #1CB698;
+  color: var(--accent);
   margin-bottom: 10px;
 }
 .curriculum .fila .item p{
   line-height: 24px;
 }
 .curriculum .fila .izq{
-  border-right: 2px solid #1CB698;
+  border-right: 2px solid var(--accent);
   margin-right: 20px;
 }
 .curriculum .fila .der{
-  border-left: 2px solid #1CB698;
+  border-left: 2px solid var(--accent);
   margin-left: 20px;
 }
 .curriculum .fila .item .conectori{
   height: 2px;
-  background-color: #1CB698;
+  background-color: var(--accent);
   width: 47px;
   position: absolute;
   top: 50%;
@@ -471,14 +394,14 @@ html {
   height: 10px;
   width: 10px;
   border-radius: 50%;
-  background-color: #1CB698;
+  background-color: var(--accent);
   float: right;
   position: relative;
   bottom: 4px;
 }
 .curriculum .fila .item .conectord{
   height: 2px;
-  background-color: #1CB698;
+  background-color: var(--accent);
   width: 47px;
   position: absolute;
   top: 50%;
@@ -490,7 +413,7 @@ html {
   height: 10px;
   width: 10px;
   border-radius: 50%;
-  background-color: #1CB698;
+  background-color: var(--accent);
   float: left;
   position: relative;
   bottom: 4px;
@@ -608,7 +531,7 @@ html {
   left: 0;
   width: 0;
   height: 100%;
-  background-color: #1CB698;
+  background-color: var(--accent);
   z-index: -1;
   transition: 1s;
 }
@@ -634,7 +557,7 @@ html {
   margin-bottom: 20px;
 }
 .contacto .col .info ul li i{
-  color: #1CB698;
+  color: var(--accent);
   display: inline-block;
   margin-right: 20px;
 }
@@ -666,7 +589,7 @@ footer .arriba{
   display: block;
   width: 50px;
   height: 50px;
-  background-color: #1CB698;
+  background-color: var(--accent);
   color: #fff;
   position: absolute;
   left: 50%;
