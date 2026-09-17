@@ -268,6 +268,11 @@ html {
   font-family: 'Righteous';
   margin-bottom: 25px;
 }
+.skills .subtitulo-skill{
+  color: var(--accent);
+  font-size: 20px;
+  margin: 0 0 15px;
+}
 .skills .skill > span{
   font-weight: bold;
   display: block;
@@ -447,6 +452,17 @@ html {
   margin: 10px;
   cursor: pointer;
 }
+.portfolio .galeria .proyecto-enlace{
+  width: 340px;
+  min-height: 190px;
+  background: #1e2326;
+}
+.portfolio .galeria .proyecto-enlace a{
+  display: block;
+  min-height: 190px;
+  color: inherit;
+  text-decoration: none;
+}
 .portfolio .galeria .proyecto img{
   width: 100%;
   display: block;
@@ -457,7 +473,7 @@ html {
   width: 100%;
   height: 100%;
   text-align: center;
-  background: linear-gradient(rgba(28,182,152,.8), rgba(28,182,152,.8));
+  background: var(--accent);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -465,6 +481,9 @@ html {
   font-size: 18px;
   letter-spacing: 3px;
   opacity: 0;
+}
+.portfolio .galeria .proyecto-enlace .overlay{
+  opacity: 1;
 }
 .portfolio .galeria .proyecto .overlay h3{
   margin-bottom: 20px;
