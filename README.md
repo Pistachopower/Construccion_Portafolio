@@ -4,11 +4,6 @@ Frontend de página web de Nelson Galicia Carrero.
 
 Sitio publicado: https://pistachopower.github.io/Construccion_Portafolio/
 
-## Proyectos destacados
-
-- Motores con Vue: https://pistachopower.github.io/Pagina_Motores_Estatica_Vue/
-- Proyecto Angular: https://pistachopower.github.io/Proyecto_Angular/
-- Diseño web: https://pistachopower.github.io/Proyecto_Diseno_Web/
 
 ## Probar en local
 
