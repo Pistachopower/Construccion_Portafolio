@@ -33,7 +33,9 @@ Para detener el servidor, pulsa `Ctrl+C` en la terminal.
 
 ## Publicar en GitHub Pages
 
-La rama `main` contiene los archivos estáticos que GitHub Pages publica.
+El workflow de GitHub Actions publica automáticamente el contenido de la rama
+`main` en GitHub Pages después de cada `push`.
+
 Después de realizar cambios:
 
 ```bash
